@@ -1055,6 +1055,7 @@ form input{
 	z-index: 10;
 	animation: scale 0.5s ease;
 	position: relative;
+	text-align: center;
 }
 
 
@@ -1455,8 +1456,26 @@ form input{
 
 	top: 625px;
 	right: 50px;
-}
+	}
 
+
+	.css-modal-close {
+		width: 10px;
+		height: 10px;
+	}
+
+	form input{
+		width: 80%;
+		height: 80%;
+	}
+
+	.chatb button {
+		width: 80%;
+	}
+
+	.search-box form input {
+		width: 150px;
+	}
 }
 
 @media screen and (max-width: 428px){
