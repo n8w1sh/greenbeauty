@@ -1,0 +1,1501 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+*{
+	scroll-behavior: smooth;
+}
+
+
+body{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1280px;
+}
+
+.flex{
+	display: flex;
+}
+
+
+/*Хедер*/
+
+.flex1{
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.videofon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	height: 100vh;
+}
+
+.gb{
+	color: #09670C;
+	text-align: center;
+	font-size: 40px;
+	bottom: 150px;
+	font-family: 'Calligraffitti', cursive;
+	width: 90%;
+	z-index: 3;
+}
+
+.flex :hover{
+	border: solid 0.5px;
+	background-color: #EFFFEC;
+	box-shadow: 2px 2px 5px black;
+	transition-duration: .5s;
+}
+
+.gbt{
+	text-shadow: 2px 2px 5px black;
+}
+
+.stroka{
+	display: flex;
+	justify-content: space-between;
+	border-radius: 10px;
+	top: 30px;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.6);
+	align-items: center;
+	z-index: 20;
+}
+
+.txt{
+	font-size: 17px;
+	text-align: center;
+	color: black;
+	cursor: pointer;
+	font-family: 'Cormorant Infant', serif;
+}
+
+.flex a{
+	background: white;
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+	margin: 20px;
+}
+
+.search-box{
+	height: 30px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 20px;
+}
+
+.search-box form input{
+	width: 500px;
+	height: 25px;
+	padding-left: 20px;
+	font-size: 15px;
+}
+
+.search-btn button{
+	width: 50px;
+	height: 30px;
+	font-size: 10px;
+	border-radius: 10px;
+	background-color: darkcyan;
+	color: white;
+	cursor: pointer;
+}
+
+.search-btn{
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	transition-duration: .60s;
+}
+
+.ex1t{
+	width: 40px;
+	height: 40px;
+	padding-right: 20px;
+	cursor: pointer;
+	display: flex;
+}
+
+.chatcir{
+	color: black;
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	border: solid 1px;
+	background-color: #09670C;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	/*visibility: hidden;*/
+	cursor: pointer;
+	text-decoration: none;
+	top: 500px;
+	right: 50px;
+	position: fixed;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+.qwes{
+	font-size: 40px;
+	text-decoration: none;
+	color: black;
+}
+
+.uppu{
+	background-color: rgba(255, 255, 255, 0.2);
+	height: 50px;
+	width: 50px;
+	border-radius: 20px;
+	border: solid 1px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+	top: 600px;
+	right: 55px;
+	position: fixed;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+	z-index: 4;
+}
+
+.stril{
+	font-size: 40px;
+	text-decoration: none;
+	color: black;
+}
+
+
+.ex2t{
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	display: none;
+	z-index: 2;
+}
+
+.ex2t img{
+	width: 100%;
+}
+
+.ex1t img{
+	width: 100%;
+}
+
+.rozes{
+	width: 500px;
+	height: 300px;
+	background-image: url(img/rozes1.jpg);
+	border-radius: 200px;
+	opacity: 0.7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-position: center;
+	background-size: cover;
+}
+
+.about1{
+	color: white;
+	font-size: 30px;
+	margin-bottom: 20px;
+	font-family: 'Cormorant Infant', serif;
+}
+
+.about2{
+	width: 80%;
+	color: white;
+	font-size: 23px;
+	font-family: 'Cormorant Infant', serif;
+}
+
+.chat{
+	visibility: hidden;
+}
+
+.chath{
+	margin: 30px;
+}
+
+
+.chatf{
+	padding-bottom: 40px;
+}
+
+.chatf form{
+	display: flex;
+	width: 100%;
+} 
+
+form input{
+	height: 50px;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 25px;
+	border-radius: 5px;
+}
+
+.chat form input{
+	margin-bottom: 50px;
+}
+
+.chatb button {
+	width: 100%;
+	height: 40px;
+	font-size: 25px;
+	border-radius: 5px;
+	background-color: darkcyan;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.formaiek{
+	border: solid 0.5px;
+	background: center;
+}
+
+.sec1{
+	display: flex;
+	margin-top: 100px;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+
+.dani a{
+	text-decoration: none;
+	color: #4BBF02;
+}
+
+/*Бургер меню*/
+
+.hamburger-menu{
+	visibility: hidden;
+}
+
+#menu__toggle {
+	opacity: 0;
+}
+
+.menu__btn {
+	display: flex; 
+	align-items: center; 
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	border-radius: 10px;
+	background-color: #ffff;
+}
+.menu__btn > span::before {
+	content: '';
+	top: -10px;
+}
+.menu__btn > span::after {
+	content: '';
+	top: 10px;
+}
+
+
+.menu__box {
+	display: block;
+	position: fixed;
+	visibility: hidden;
+	top: 0;
+	left: -100%;
+	width: 60%;
+	margin: 0;
+	padding: 80px 0;
+	list-style: none;
+	text-align: center;
+	background-color: #ECEFF1;
+	box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+	border-radius: 0 0 15px 0;
+	z-index: 5;
+}
+
+.menu__item {
+	display: block;
+	padding: 12px 24px;
+	color: #333;
+	font-family: 'Cormorant Infant', serif;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.menu__item:hover {
+	background-color: #CFD8DC;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+	transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+	top: 0;
+	transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+	visibility: visible;
+	left: 0;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	transition-duration: .25s;
+}
+.menu__box {
+	transition-duration: .25s;
+}
+.menu__item {
+	transition-duration: .25s;
+}
+
+
+
+
+/*Проектування*/
+.flex2{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	background: url(img/fone2.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.design{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 80px;
+	border-radius: 200px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.txt2{
+	font-size: 60px;
+	text-align: center;
+	color: black;
+	font-family: 'Cormorant Infant', serif;
+}
+
+.des1{
+	width: 500px;
+	height: 400px;
+	cursor: pointer;
+}
+
+.des1 img{
+	width: 100%;
+}
+
+
+.txtd{
+	font-size: 26px;
+}
+
+.sqer1{
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	z-index: 4;
+}
+
+
+/*Озеленення*/
+
+.flex3{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	background: url(img/6.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.lands{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 80px;
+	border-radius: 200px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.txt3{
+	font-size: 60px;
+	text-align: center;
+	color: black;
+	font-family: 'Cormorant Infant', serif;
+
+}
+
+.lands1{
+	width: 500px;
+	cursor: pointer;
+}
+
+.lands1 img{
+	width: 100%;
+}
+
+
+.txtl{
+	font-size: 30px;
+	color: white;
+	font-family: 'Cormorant Infant', serif;
+	cursor: pointer;
+}
+
+.sqer2{
+	display: flex;
+	width: 80%;
+	margin: 20px;
+	justify-content: space-between;
+}
+
+/*Догляд*/
+
+.flex4{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	background: url(img/100.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.care{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 80px;
+	border-radius: 200px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.txt4{
+	font-size: 60px;
+	text-align: center;
+	color: black;
+	font-family: 'Cormorant Infant', serif;
+}
+
+.car1{
+	width: 500px;
+	cursor: pointer;
+}
+
+.car1 img{
+	width: 100%;
+}
+
+
+.txtc{
+	font-size: 28px;
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+.sqer3{
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+
+/*Матеріали*/
+
+.flex5{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: url(img/200.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	justify-content: space-evenly;
+}
+
+.mat{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 80px;
+	border-radius: 200px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.txt5{
+	font-size: 60px;
+	text-align: center;
+	color: black;
+	font-family: 'Cormorant Infant', serif;
+}
+
+.sqer4{
+	flex-direction: column;
+}
+
+.up5{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.down5{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	padding: 10px;
+}
+
+.up5 img{
+	width: 90%;
+
+}
+
+.down5 img{
+	width: 90%;
+	
+}
+
+.prewlast{
+	display: none;
+}
+
+.prewlast img{
+	width: 90%;
+}
+
+.vidstup{
+	margin: 10px 10px 10px 10px;
+	cursor: pointer;
+}
+
+/*Футер*/
+
+.gra{
+	background: linear-gradient(#000000, #1C1C1C);
+	width: 100%;
+}
+
+.cont{
+	padding: 25px 0px 25px 100px;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-size: 20px;
+	font-family: 'Cormorant Infant', serif;
+}
+
+.sm{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-family: 'Cormorant Infant', serif;
+}
+
+
+.meji{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.foto{
+	width: 60%;
+	margin-top: 10px ;
+}
+
+.foto img{
+	width: 30%;
+	cursor: pointer;
+}
+
+
+.bgpopup{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.8);
+		z-index: 21;
+		display: none;
+	}
+
+.bgpopup.active{
+	display: block;
+}
+
+.popupP{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 90%;
+		height: 75%;
+		background-color: white;
+		transform: translate(-50%, -50%);
+		padding-top: 60px;
+
+	}
+
+.close_popup{
+	position: absolute;
+	height: 40px;
+	right: 10px;
+	top: 10px;
+}
+
+
+
+
+/*DDDDDDD*/
+
+.bl1{
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	width: 100%;
+	height: 70%;
+	display: flex;
+
+}
+
+.bl2{
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	width: 100%;
+	height: 70%;
+	display: flex;
+}
+
+
+.bl1 :hover {
+	border: solid 0.5px;
+	background-color: darkseagreen;
+	box-shadow: 2px 2px 5px black;
+	transition-duration: .5s;
+}
+
+.bl2 :hover {
+	border: solid 0.5px;
+	background-color: darkseagreen;
+	box-shadow: 2px 2px 5px black;
+	transition-duration: .5s;
+}
+
+.ddd{
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 90%;
+	flex-direction: row;
+	display: flex;
+}
+
+.block{
+	width: 80%;
+	height: 30%;
+	display: flex;
+	background-color: mediumseagreen;
+	font-size: 30px;
+	color: white;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'Cormorant Infant', serif;
+}
+
+
+
+/* Контейнер для кнопки */
+.css-modal-checkbox-container {
+		z-index: 10;
+		font-size: 40px;
+		text-decoration: none;
+		color: black;
+}
+/* Убираем флажок */
+#css-modal-checkbox1 {
+	display: none;
+}
+/* Кнопка для открытия */
+
+.css-modal-checkbox1 {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120%;
+    height: 350px;
+    border-radius: 150px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: 'Cormorant Infant', serif;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+
+/*Контейнер, который затемняет страницу */
+#css-modal-checkbox1 + .cmc {
+    display: none;
+}
+#css-modal-checkbox1:checked + .cmc {
+	display:flex;
+	align-items:center;
+	justify-content:center;	
+	z-index: 11;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	animation: bg 0.5s ease;
+}
+
+/* Модальное окно */
+#css-modal-checkbox1:checked + .cmc .popuD {
+	height: 85%;
+	width: 95%;
+	margin-top: 60px;
+	border-radius: 20px;
+	flex-direction: column;
+	visibility: visible;
+	display: flex;
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 1.0);
+	background: #EFFFEC;
+	justify-content: center;
+	align-items: center;
+	border: solid 0.5px;
+	z-index: 10;
+	animation: scale 0.5s ease;
+	position: relative;
+}
+
+
+
+
+/*OOOOOOO*/
+
+/* Контейнер для кнопки */
+.css-modal-checkbox-container {
+		z-index: 10;
+		font-size: 40px;
+		text-decoration: none;
+		color: black;
+}
+/* Убираем флажок */
+#css-modal-checkbox2 {
+	display: none;
+}
+/* Кнопка для открытия */
+
+.css-modal-checkbox2 {
+	width: 500px;
+	height: 338px;
+	background-image: url(img/lopat.jpg);
+	border-radius: 150px;
+	opacity: 0.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+
+
+/*Контейнер, который затемняет страницу */
+#css-modal-checkbox2 + .cmc {
+    display: none;
+}
+#css-modal-checkbox2:checked + .cmc {
+	display:flex;
+	align-items:center;
+	justify-content:center;	
+	z-index: 11;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	animation: bg 0.5s ease;
+}
+
+/* Модальное окно */
+#css-modal-checkbox2:checked + .cmc .popuO {
+	height: 85%;
+	width: 95%;
+	margin-top: 60px;
+	border-radius: 20px;
+	flex-direction: column;
+	visibility: visible;
+	display: flex;
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 1.0);
+	background: #EFFFEC;
+	justify-content: center;
+	align-items: center;
+	border: solid 0.5px;
+	z-index: 10;
+	animation: scale 0.5s ease;
+	position: relative;
+}
+
+
+
+
+
+/*CCCCCC*/
+
+
+/* Контейнер для кнопки */
+.css-modal-checkbox-container {
+		z-index: 10;
+		font-size: 40px;
+		text-decoration: none;
+		color: black;
+}
+/* Убираем флажок */
+#css-modal-checkbox3 {
+	display: none;
+}
+/* Кнопка для открытия */
+
+.css-modal-checkbox3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 500px;
+	height: 353px;
+	border-radius: 150px;
+	background-color: rgba(255, 255, 255, 0.7);
+	font-family: 'Cormorant Infant', serif;
+	cursor: pointer;
+}
+
+
+
+/*Контейнер, который затемняет страницу */
+#css-modal-checkbox3 + .cmc {
+    display: none;
+}
+#css-modal-checkbox3:checked + .cmc {
+	display:flex;
+	align-items:center;
+	justify-content:center;	
+	z-index: 11;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	animation: bg 0.5s ease;
+}
+
+/* Модальное окно */
+#css-modal-checkbox3:checked + .cmc .popuC {
+	height: 85%;
+	width: 95%;
+	margin-top: 60px;
+	border-radius: 20px;
+	flex-direction: column;
+	visibility: visible;
+	display: flex;
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 1.0);
+	background: #EFFFEC;
+	justify-content: space-between;
+	align-items: center;
+	border: solid 0.5px;
+	z-index: 10;
+	animation: scale 0.5s ease;
+	position: relative;
+
+}
+
+
+
+
+
+/* Контейнер для кнопки */
+.css-modal-checkbox-container {
+		z-index: 10;
+		font-size: 40px;
+		text-decoration: none;
+		color: black;
+}
+/* Убираем флажок */
+#css-modal-checkbox {
+	display: none;
+}
+/* Кнопка для открытия */
+
+.css-modal-checkbox {
+	color: black;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    border: solid 1px;
+    background-color: #09670C;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    top: 500px;
+    right: 50px;
+    position: fixed;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 60%);
+    z-index: 4;
+}
+
+
+#css-modal-checkbox + .cmc {
+    display: none;
+}
+#css-modal-checkbox:checked + .cmc {
+	display:flex;
+	align-items:center;
+	justify-content:center;	
+	z-index: 11;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	animation: bg 0.5s ease;
+}
+
+/* Модальне вікно */
+#css-modal-checkbox:checked + .cmc .chat {
+	height: 450px;
+	width: 60%;
+	border-radius: 20px;
+	flex-direction: column;
+	visibility: visible;
+	display: flex;
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 1.0);
+	background: #EFFFEC;
+	justify-content: center;
+	align-items: center;
+	border: solid 0.5px;
+	z-index: 10;
+	animation: scale 0.5s ease;
+	position: relative;
+	text-align: center;
+}
+
+
+
+/* Кнопка закриття */
+.css-modal-close {
+	content: "";
+	width: 20px;
+	height: 20px;
+	right: 15px;
+	top: 15px;
+	border: 6px solid #BFE2FF;
+	border-radius: 12px;
+	position: absolute;
+	z-index: 10;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23337AB7' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cline x1='18' y1='6' x2='6' y2='18'%3e%3c/line%3e%3cline x1='6' y1='6' x2='18' y2='18'%3e%3c/line%3e%3c/svg%3e");
+	background-color: #FFF;
+	background-size: cover;
+	cursor: pointer;
+}
+
+
+
+/* Анимации */
+@keyframes scale {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes move {
+	0% {
+		right: -80px;
+	}
+	100% {
+		right: 20px;
+	}
+}
+
+}
+
+
+/*adapt*/
+
+@media screenand (max-width: 1280px){
+
+}
+
+@media screen and (max-width: 1270px){
+	.search-box form input{
+		width: 350px;
+		height: 25px;
+		padding-left: 20px;
+	}
+}
+
+@media screen and (max-width: 1100px){
+
+	.flex a{
+		padding: 5px 10px 5px 10px;
+		margin: 10px;
+	}
+	.search-box form input{
+		width: 275px;
+	}
+
+	.css-modal-checkbox1{
+		border-radius: 100px;
+		height: 290px;
+		margin-left: 20px ;
+	}
+	.txtd{
+		font-size: 23px;
+	}
+
+	.sqer2{
+		align-items: center;
+	}
+
+	.css-modal-checkbox2{
+		width: 350px;
+		border-radius: 60px;
+		height: 250px;
+	}
+
+	.txtl{
+		font-size: 25px;
+	}
+
+	.lands1{
+		display: flex;
+		width: 400px;
+		margin-left: 20px;
+	}
+
+
+	.lands{
+		margin-bottom: 80px;
+	}
+
+	.care{
+		margin-bottom: 90px;
+	}
+
+	.sqer3{
+		align-items: center;
+
+	}
+
+	.css-modal-checkbox3{
+		width: 385px;
+		border-radius: 60px;
+		height: 270px;
+	}
+
+	.car1 {
+		width: 60%;
+		margin-right: 30px;
+	}
+
+	.txtc{
+		font-size: 25px;
+	}
+
+	.flex4{
+		justify-content: center;
+	}
+
+	.meji{
+		width: 95%;
+	}
+
+	.cont{
+		padding: 25px 0px 25px 20px;
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 900px){
+	.flex a{
+		padding: 2px 5px 2px 5px;
+		margin: 5px;
+	}
+	.search-box form input{
+		width: 250px;
+		height: 20px;
+	}
+
+	.search-btn button{
+		height: 23px;
+		font-size: 7px;
+		margin-top: 4px;
+
+	}
+
+	.ex1t a{
+		height: 40px;
+	}
+
+	.rozes{
+		width: 230px;
+		height: 350px;
+	}
+
+	.about1{
+		font-size: 25px;
+	}
+
+	.about2{
+		font-size: 17px;
+	}
+
+	.chat{
+		height: 300px;
+		width: 400px;
+	}
+
+
+	.txtd{
+		font-size: 20px;
+	}
+
+	.css-modal-checkbox1{
+		height: 260px;
+		border-radius: 80px;
+	}
+
+	.txtl{
+		font-size: 21px;
+	}
+
+	.css-modal-checkbox2{
+		width: 300px;
+		height: 200px;
+	}
+
+	.txtc{
+		font-size: 20px;
+	}
+
+	.css-modal-checkbox3{
+		width: 350px;
+		height: 230px;
+	}
+
+	.block{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.chat{
+		display: none;
+	}
+
+	.stroka{
+		display: none;
+	}
+
+	.hamburger-menu{
+		visibility: visible;
+		z-index: 20;
+	}
+
+	.ex2t{
+		display: flex;
+	}
+
+	.txt2{
+		font-size: 40px;
+	}
+
+	.txt3{
+		font-size: 40px;
+	}
+
+	.txt4{
+		font-size: 40px;
+	}
+
+	.txt5{
+		font-size: 40px;
+	}
+
+	.chatcir{
+		visibility: visible;
+		z-index: 10;
+		font-size: 40px;
+		text-decoration: none;
+		color: black;
+	}
+
+	#menu__toggle1 {
+		opacity: 0;
+	}
+
+	#menu__toggle1:checked ~ .chat{
+		visibility: visible;
+	}
+
+
+	.sqer1{
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.css-modal-checkbox1{
+		margin-left: -20px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.des1{
+		width: 300px;
+		height: 250px;
+	}
+
+	.sqer2{
+		flex-direction: column;
+		margin: 0px;
+		height: 65%;
+	}
+
+	.sqer3{
+		flex-direction: column;
+	}
+
+	.car1{
+		width: 80%;
+		margin-right: 0px;
+		display: flex;
+	}
+
+	.css-modal-checkbox3 {
+		width: 80%;
+		height: 200px;
+		margin-left: 40px;
+	}
+
+	.care{
+		margin-bottom: 0px;
+	}
+
+	.meji{
+		flex-direction: column;
+	}
+
+	.cont{
+		align-items: center;
+	}
+
+	.lands{
+		margin-bottom: 0px;
+	}
+
+	.lands1{
+		width: 320px;
+		margin-right: 20px;
+		margin-bottom: 0px;
+	}
+
+	.flex4{
+		justify-content: space-around;
+	}
+
+	.txt2{
+		font-size: 30px;
+	}
+
+	.txt3{
+		font-size: 30px;
+	}
+
+	.txt4{
+		font-size: 30px;
+	}
+
+	.txt5{
+		font-size: 30px;
+	}
+
+	.design{
+		border-radius: 40px;
+	}
+
+	.lands{
+		border-radius: 40px;
+	}
+
+	.care{
+		border-radius: 40px;
+	}
+
+	.mat{
+		border-radius: 40px;
+	}
+
+	.up5{
+		display: none;
+	}
+
+	.down5{
+		display: none;
+	}
+
+	.prewlast{
+		display: flex;
+	}
+
+	.aaa{
+	justify-content: center;
+	display: flex;
+}
+
+	.cont{
+		font-size: 10px;
+		padding: 5px 0px 10px 0px;
+	}
+
+	.sm{
+		font-size: 10px;
+		align-items: center;
+		width: 70%;
+		margin-top: 0px ;
+	}
+
+	.rozes{
+		width: 50%;
+	}
+
+	.uppu{
+
+	top: 625px;
+	right: 50px;
+	}
+
+
+	.css-modal-close {
+		width: 10px;
+		height: 10px;
+	}
+
+	form input{
+		width: 80%;
+		height: 80%;
+	}
+
+	.chatb button {
+		width: 80%;
+	}
+
+	.search-box form input {
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 428px){
+
+	.txtd{
+		font-size: 15px;
+	}
+
+	.txtc {
+    font-size: 15px;
+}
+
+.rozes{
+		width: 230px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 320px){
+
+}
